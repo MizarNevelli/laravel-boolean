@@ -1,0 +1,49 @@
+nav{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img{
+    width: 200px;
+    margin: 0 20px;
+  }
+
+  .topbar-links{
+
+    padding: 0 20px;
+
+    span{
+      padding: 0 30px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button{
+      @include orange-btn;
+
+    }
+  }
+
+  .fa-bars{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  nav{
+    .topbar-links{
+      display: none;
+    }
+
+    .fa-bars{
+      display: inline-block;
+      font-size: 200%;
+      cursor: pointer;
+      color: darkgray;
+      padding: 0 30px;
+    }
+  }
+
+
+}

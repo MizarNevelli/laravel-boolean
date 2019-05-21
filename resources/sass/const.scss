@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+@mixin flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin orange-btn {
+  height: 40px;
+  background: #F47637;
+  padding: 0 20px;
+  border-radius: 3px;
+  color: white;
+}
+
+@mixin animated-btn {
+  &:hover{
+    border-color: #61CE4D;
+  }
+  font-size: 1rem;
+  position: relative;
+  display: block;
+  width: 270px;
+  height: 70px;
+  text-transform: uppercase;
+  border: 3px solid #1b3c59;
+  color: #1b3c59;
+  font-size: 20px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+
+  .ex-12-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #F8FAFC;
+    width: 60px;
+    height: 10px;
+  }
+  .ex-12-bottom-white {
+      position: absolute;
+      bottom: -10px;
+      right: 20%;
+      background: #F8FAFC;
+      width: 60px;
+      height: 10px;
+  }
+
+}
+
+.bool-btn:hover .ex-12-top-white{
+  animation-name: boolBtnTop;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.bool-btn:hover .ex-12-bottom-white{
+  animation-name: boolBtnBottom;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes boolBtnTop {
+  50% {left: calc( 100% - 60px );}
+}
+
+@keyframes boolBtnBottom {
+  50% {right: calc( 100% - 60px );}
+}

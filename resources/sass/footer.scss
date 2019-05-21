@@ -1,0 +1,36 @@
+footer{
+
+  .footer-top{
+    height: 400px;
+    background: #1B3C59;
+    @include flex-centered;
+    flex-direction: column;
+    color: white;
+    position: relative;
+
+    button{
+      background: #F47637;
+      width: 250px;
+      margin-top: 30px;
+      font-size: 24px;
+      color: white;
+      height: 50px;
+      outline: none;
+      border: none;
+    }
+    .bell-icon{
+      border-radius: 50%;
+      background: white;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      top: 10%;
+      right: 40%;
+      @include flex-centered;
+      i{
+        color: darkblue;
+        font-size: 200%;
+      }
+    }
+  }
+}
