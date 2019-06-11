@@ -1,6 +1,8 @@
 # Boolean site copy
+
 ## Technologies
 HTML + SCSS + Laravel
+
 _Responsive_
 
 ## Preview:
